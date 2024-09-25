@@ -1,0 +1,28 @@
+{
+    "name": "yamaaaaaa/wareki",
+    "description": "Japanese Era Date Utility",
+    "keywords":["Japanese","Japan","Era","Date"],
+    "type":"library",
+    "license": "MIT",
+    "homepage": "https://github.com/yamaaaaaa/wareki.git",
+    "authors": [
+        {
+            "name": "Takamori Yamashiro",
+            "email": "takamori@yama-lab.com"
+        }
+    ],
+    "require": {
+        "nesbot/carbon": "^3.8"
+    },
+    "require-dev": {
+        "phpstan/phpstan": "^1.12",
+        "phpunit/phpunit": "^11.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "yamaaaaaa\\Wareki\\": "src/",
+            "yamaaaaaa\\Wareki\\Tests\\": "test/"
+        }
+    }
+    
+}

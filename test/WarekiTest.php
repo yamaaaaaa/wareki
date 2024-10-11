@@ -3,6 +3,7 @@
 namespace yamaaaaaa\Wareki\Tests;
 
 use PHPUnit\Framework\TestCase;
+use yamaaaaaa\Wareki\EraYear;
 use yamaaaaaa\Wareki\Wareki;
 
 class WarekiTest extends TestCase
@@ -14,6 +15,16 @@ class WarekiTest extends TestCase
 		var_dump($formated);
 		$this->assertIsString($formated);
 	}
+	
+	public function testOptions():void{
+		
+		$options = EraYear::options();
+		var_dump($options);
+		
+		$this->assertIsArray($options);
+		
+	}
+	
 	
 	public function testEra() : void{
 		$now = time();
